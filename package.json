@@ -1,0 +1,41 @@
+{
+  "name": "use-svelte",
+  "svelte": "src/index.js",
+  "version": "0.0.1",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.75.6",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-import-css": "^3.0.3",
+    "rollup-plugin-svelte": "^7.1.0",
+    "sveld": "^0.17.1",
+    "svelte": "^3.48.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treboryx/use-svelte.git"
+  },
+  "author": "treboryx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treboryx/use-svelte/issues"
+  },
+  "homepage": "https://github.com/treboryx/use-svelte#readme",
+  "dependencies": {
+    "@rollup/plugin-babel": "^5.3.1"
+  }
+}

@@ -1,7 +1,9 @@
+// use:clickOutside on:clickOutside={() => close()}
+
 export default (node) => {
   const handleClick = (event) => {
     if (node && !node.contains(event.target) && !event.defaultPrevented) {
-      node.dispatchEvent(new CustomEvent("click_outside", node));
+      node.dispatchEvent(new CustomEvent("clickOutside", node));
     }
   };
 

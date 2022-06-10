@@ -1,3 +1,5 @@
+// <div use:tooltip contet='some content'></div>
+
 export default (element) => {
   let div;
   let content;

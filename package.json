@@ -1,12 +1,13 @@
 {
   "name": "use-svelte",
   "svelte": "src/index.js",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.3.1",

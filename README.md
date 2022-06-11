@@ -1,5 +1,59 @@
 # use-svelte
 
+A collection of Svelte Actions / Directives.
+
+### **Shortcut**
+
+Keyboard shortcuts for elements
+
+```jsx
+import { shortcut } from "use-svelte";
+
+<div
+  use:shortcut={{
+    shift: true,
+    control: true,
+    code: "KeyA",
+    fn: () => trigger(),
+  }}
+  on:click={() => trigger()}
+></div>;
+```
+
+If `fn` not supplied, it will trigger the `on:click` event instead.
+
+### **Lazy**
+
+Lazy load action for images
+
+```jsx
+import { lazy } from "use-svelte";
+
+<img src="placeholder" use:lazy={{src: 'lazy load'}}>
+```
+
+### **Tooltip**
+
+An awesome tooltip action
+
+```jsx
+import { tooltip } from "use-svelte";
+
+<div use:tooltip content="some content"></div>;
+```
+
+To customize the default styling, override the `use_svelte_tooltip` class in our css.
+
+### **ClickOutside**
+
+Something you'll be definitely using: a clickOutside event.
+
+```jsx
+import { clickOutside } from "use-svelte";
+
+<div use:clickOutside on:clickOutside={() => close()}></div>;
+```
+
 ## Contributing
 
 1. Fork this repository

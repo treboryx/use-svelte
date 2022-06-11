@@ -1,4 +1,4 @@
-// <div use:tooltip contet='some content'></div>
+// <div use:tooltip content='some content'></div>
 
 export default (element) => {
   let div;

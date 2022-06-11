@@ -1,11 +1,12 @@
 <script>
-  let count = 0
+  let count = 0;
   const increment = () => {
-    count += 1
-  }
+    count += 1;
+  };
+  import { shortcut } from "use-svelte";
 </script>
 
-<button on:click={increment}>
+<button use:shortcut={{ shift: true }} on:click={increment}>
   Clicks: {count}
 </button>
 

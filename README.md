@@ -54,6 +54,16 @@ import { clickOutside } from "use-svelte";
 <div use:clickOutside on:clickOutside={() => close()}></div>;
 ```
 
+### **Autofocus**
+
+Will autofocus on element once the page is loaded
+
+```jsx
+import { autofocus } from "use-svelte";
+
+<input autofocus />;
+```
+
 ## Contributing
 
 1. Fork this repository

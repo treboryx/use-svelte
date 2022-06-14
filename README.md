@@ -61,7 +61,7 @@ Will autofocus on element once the page is loaded
 ```jsx
 import { autofocus } from "use-svelte";
 
-<input autofocus />;
+<input use:autofocus />;
 ```
 
 ## Contributing

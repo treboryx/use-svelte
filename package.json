@@ -36,8 +36,5 @@
   "bugs": {
     "url": "https://github.com/treboryx/use-svelte/issues"
   },
-  "homepage": "https://github.com/treboryx/use-svelte#readme",
-  "dependencies": {
-    "tippy.js": "^6.3.7"
-  }
+  "homepage": "https://github.com/treboryx/use-svelte#readme"
 }

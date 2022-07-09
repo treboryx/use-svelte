@@ -64,6 +64,25 @@ import { autofocus } from "use-svelte";
 <input autofocus />;
 ```
 
+### **Click to Copy**
+
+Click to copy
+
+```jsx
+import { clickToCopy } from "use-svelte";
+
+<svelte:window on:copySuccess={() => whatever()} on:copyError={() => whatever()}/>
+
+<div use:clickToCopy>
+	Click to copy this text
+</div>
+
+// OR
+<div id="text">This is some text</div>
+
+<button use:clickToCopy={'#text'}>Click to copy above text</button>
+```
+
 ## Contributing
 
 1. Fork this repository

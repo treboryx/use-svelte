@@ -17,7 +17,7 @@
     "rollup-plugin-import-css": "^3.0.3",
     "rollup-plugin-svelte": "^7.1.0",
     "sveld": "^0.17.1",
-    "svelte": "^3.48.0"
+    "svelte": "^3.49.0"
   },
   "keywords": [
     "svelte"

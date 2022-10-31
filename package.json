@@ -16,7 +16,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-import-css": "^3.0.3",
     "rollup-plugin-svelte": "^7.1.0",
-    "sveld": "^0.17.2",
+    "sveld": "^0.18.0",
     "svelte": "^3.50.1"
   },
   "keywords": [

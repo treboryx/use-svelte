@@ -1,7 +1,8 @@
 {
   "name": "use-svelte",
   "svelte": "src/index.js",
-  "version": "0.0.6",
+  "version": "0.1.0",
+  "type": "module",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
@@ -10,14 +11,14 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-node-resolve": "^14.1.0",
-    "rollup": "^2.75.6",
+    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.2.5",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-import-css": "^3.0.3",
+    "rollup-plugin-import-css": "^3.1.0",
     "rollup-plugin-svelte": "^7.1.0",
     "sveld": "^0.18.0",
-    "svelte": "^3.50.1"
+    "svelte": "^3.52.0"
   },
   "keywords": [
     "svelte"

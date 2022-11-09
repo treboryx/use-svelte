@@ -4,12 +4,11 @@ const options = {
   threshold: 0,
 };
 
-const loaded = () => {
-  image.style.opacity = "1";
-};
-
 export default (image, src) => {
   if ("IntersectionObserver" in window) {
+    const loaded = () => {
+      image.style.opacity = "1";
+    };
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         image.src = src;

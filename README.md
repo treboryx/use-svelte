@@ -29,7 +29,7 @@ Lazy load action for images
 ```jsx
 import { lazy } from "use-svelte";
 
-<img src="placeholder" use:lazy={{src: 'lazy load'}}>
+<img src="placeholder" use:lazy={'lazy load'}>
 ```
 
 ### **Tooltip**

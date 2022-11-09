@@ -2,6 +2,7 @@
   import logo from "./assets/svelte.png";
   import Counter from "./lib/Counter.svelte";
   import { tooltip } from "use-svelte";
+  import { lazy } from "../../src";
 </script>
 
 <main>
@@ -11,7 +12,13 @@
   <Counter />
 
   <p use:tooltip content="hi there!">Press Shift to simulate clicking</p>
-
+  <p style="max-width: 30px;" />
+  <img
+    use:lazy={"https://images.unsplash.com/photo-1667916443896-de20c0ccfc99?ixlib=rb-4.0.3"}
+    src="https://via.placeholder.com/200/92c952"
+    alt="a preview"
+    loading="lazy"
+  />
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
     the officially supported framework, also powered by Vite!
